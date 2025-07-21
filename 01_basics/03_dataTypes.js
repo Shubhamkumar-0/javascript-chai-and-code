@@ -4,16 +4,16 @@ let isloggedin=false
 
 
 /**premitive.....
- * number
- * bigint
- * boolean
- * string=""
- * bull=standalone value
- * undefined
- * symbol=unique
+ * 1.number
+ * 2.bigint
+ * 3.boolean
+ * 4.string=""
+ * 5.bull=standalone value
+ * 6.undefined
+ * 7.symbol=unique
  * 
  * non-premitive.....
- * object
+ * object,array,function
  * 
  */
 console.log(typeof undefined); //undefined
@@ -63,3 +63,12 @@ let st=String(num);
 console.log(" ");
 console.log(st);//33
 console.log(typeof(st));//string
+
+//in symbol datatypes value could be same but return type will not.
+const id=Symbol('123')
+const anotherid=Symbol('123')
+console.log(id===anotherid)//false
+
+
+// non datatype will discuss further.. in next lecure..
+// ecmascript documentation.
