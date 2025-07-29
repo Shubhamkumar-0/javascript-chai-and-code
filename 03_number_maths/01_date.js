@@ -28,6 +28,5 @@ console.log(Math.floor(Date.now()/1000));
 
 let d=new Date();
 console.log(d);
-
-console.log(d.getMonth);
-console.log(d.getDate);
+console.log(d.getMonth());
+console.log(d.getDate());
