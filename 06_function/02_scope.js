@@ -17,3 +17,21 @@ if(true){
     console.log("inner:",a);//20-->local scopr variable access
 }
 console.log("outer:",a);//300 --> global scope variable access
+
+
+// ...............nested scope.............
+function one(){
+    const name="shubham";
+
+    function two(){
+        const age=20;
+        console.log(name);//shubham
+        console.log(age)
+    }
+    // console.log(age);-->error
+    two();
+    console.log(name);
+}
+one();
+
+
